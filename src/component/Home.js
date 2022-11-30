@@ -11,7 +11,7 @@ const Home = () => {
 
     const getdata = async (e) => {
 
-        const res = await fetch("https://lime-comfortable-beaver.cyclic.app/getdata", {
+        const res = await fetch("https://crud-opration.onrender.com/getdata", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -33,7 +33,7 @@ const Home = () => {
     }, [])
 
     const deleteuser = async(id)=>{
-        let result = await fetch(`https://lime-comfortable-beaver.cyclic.app/deleteuser/${id}`,{
+        let result = await fetch(`https://crud-opration.onrender.com/deleteuser/${id}`,{
             method:"delete",
             headers:{
                 "Content-Type": "application/json"

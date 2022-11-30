@@ -32,7 +32,7 @@ const Edit = () => {
 
 
   const getdata = async () => {
-    const res = await fetch(`https://lime-comfortable-beaver.cyclic.app/getuser/${id}`, {
+    const res = await fetch(`https://crud-opration.onrender.com/getuser/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -59,7 +59,7 @@ const Edit = () => {
 
     const { name, email, age, mobile, work, address, description } = inpval;
 
-    let res2 = await fetch(`https://lime-comfortable-beaver.cyclic.app/updateuser/${id}`, {
+    let res2 = await fetch(`https://crud-opration.onrender.com/updateuser/${id}`, {
       method: "PATCH",
       body: JSON.stringify({
         name, email, age, mobile, work, address, description

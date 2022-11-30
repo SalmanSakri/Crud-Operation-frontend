@@ -20,7 +20,7 @@ const View = () => {
 
 
   const getdata = async () => {
-    const res = await fetch(`https://lime-comfortable-beaver.cyclic.app/getuser/${id}`, {
+    const res = await fetch(`https://crud-opration.onrender.com/getuser/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -42,7 +42,7 @@ const View = () => {
   }, [])
 
   const deleteuser = async (id) => {
-    let result = await fetch(`https://lime-comfortable-beaver.cyclic.app/deleteuser/${id}`, {
+    let result = await fetch(`https://crud-opration.onrender.com/deleteuser/${id}`, {
       method: "delete",
       headers: {
         "Content-Type": "application/json"
@@ -63,8 +63,9 @@ const View = () => {
 
   return (
     <div>
-      <h1 className='text-xl font-medium'>Welcome Salman Sakri</h1>
-      <Card sx={{ maxWidth: 400 }} >
+      <h1 className='text-xl font-medium flex justify-center m-3'>Welcome</h1>
+      <div className='flex justify-center'>
+      <Card sx={{ maxWidth: 600 }} >
         <CardContent>
           <div className='flex flex-col'>
             <div className='grid'>
@@ -76,7 +77,7 @@ const View = () => {
               <div className='mt-10'>
                 <h3 className='text-xl font-medium'>Name: <span className='text-lg font-normal'>{getuserdata.name}</span> </h3>
                 <h3 className='text-xl font-medium'>Age: <span className='text-lg font-normal'>{getuserdata.age} </span> </h3>
-                <p className='text-xl font-medium'><MailOutlineIcon /> Mobile: <span className='text-lg font-normal'>{getuserdata.email}</span></p>
+                <p className='text-xl font-medium'><MailOutlineIcon /> Gmail: <span className='text-lg font-normal'>{getuserdata.email}</span></p>
                 <p className='text-xl font-medium'><WorkIcon />Ocupation: <span className='text-lg font-normal'>{getuserdata.work}</span></p>
               </div>
             </div>
@@ -89,6 +90,7 @@ const View = () => {
           </div>
         </CardContent>
       </Card>
+      </div>
 
     </div>
   )

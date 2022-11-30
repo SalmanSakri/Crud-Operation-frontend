@@ -15,9 +15,9 @@ const Navbar = () => {
                     </h1>
                 </div>
                 <div className={
-                    showMediaIcons ? "menu-link mobile-menu-link" : "menu-link flex justify-center flex-wrap mt-3 pb-3 "}>
-                    <Link to="/" className="ml-3 cursor-pointer font-normal text-base" >Home</Link>
-                    <Link to="/register" className="ml-3 cursor-pointer font-normal text-base" >AddInformation</Link>
+                    showMediaIcons ? "menu-link mobile-menu-link" : "menu-link flex justify-center flex-wrap pb-3 "}>
+                    <Link to="/" className="ml-6 cursor-pointer font-semibold text-lg" >Home</Link>
+                    <Link to="/register" className="ml-6 cursor-pointer font-semibold text-lg" >Add Information</Link>
                     
                 </div>
                 <div className='manu absolute right-5 top-7'>
